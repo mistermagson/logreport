@@ -45,6 +45,7 @@ def get_queryResults(sql_query):
     db.close()
     return results
 
+
 result1 = get_queryResults(query1)
 result2 = get_queryResults(query2)
 result3 = get_queryResults(query3)
@@ -59,6 +60,7 @@ def print_results(q_list):
         res = q_list[i][1]
         print("%s - %d" % (title, res) + " views")
     print("\n")
+
 
 print(q1)
 print_results(result1)
