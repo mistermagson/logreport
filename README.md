@@ -52,18 +52,18 @@ Para carregar os dados, use o comando
 
 1. Criar view errodata:
   ```
-    create view errodata as select cast(time as date) as data, cast(count(*) as float) as errodia 
+    create or replace view errodata as select cast(time as date) as data, cast(count(*) as float) as errodia 
 	from log 
 	where status like '%404%' group by data;
   ```
 2. Criar view errototal usando:
   ```
-    create view errototal as select cast(time as date) as data,  cast(count(*) as float) as errototal 
+    create  or replace view errototal as select cast(time as date) as data,  cast(count(*) as float) as errototal 
 	from log group by data;
   ```
 3. Create view percentualerro usando:
   ```
-    create view percentualerro as select a.data,  round(cast((100.0*a.errodia/b.errototal)as numeric),2) as percentual
+    create or replace view percentualerro as select a.data,  round(cast((100.0*a.errodia/b.errototal)as numeric),2) as percentual
 from errodata a, errototal b where a.data=b.data order by percentual desc;
   ```
   
