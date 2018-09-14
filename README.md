@@ -9,12 +9,12 @@ A ferramenta responde às seguintes questões:
 2. Quem são os autores de artigos mais populares de todos os tempos? 
 3. Em quais dias mais de 1% das requisições resultaram em erros? 
 
-###Pre-REquisitos
+### Pre-REquisitos
 - Python3
 - VirtualBox
 - Vagrant
 
-###Configuração do ambiente
+### Configuração do ambiente
 Instale o Python3
 Instale o VirtualBox
 Instale o Vagrant
@@ -28,7 +28,7 @@ Clone este repositorio
  ```
 Baixe e descompacte os dados para popular o banco de dados [newsdata.zip](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) 
  
-###Conectando à Maquina Virtual
+### Conectando à Maquina Virtual
 1. Execute Vagrant VM de dentro do sub-diretorio onde foi baixado o repositorio fullstack-nanodegree-vm usando o comando:
   
   ```
@@ -41,7 +41,7 @@ Baixe e descompacte os dados para popular o banco de dados [newsdata.zip](https:
   ```
   3. Altere o diretório para /vagrant .
 
-###Configuração do Banco
+### Configuração do Banco
 Para carregar os dados, use o comando 
   ```
 	psql -d news -f newsdata.sql
