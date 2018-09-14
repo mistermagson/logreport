@@ -15,18 +15,18 @@ A ferramenta responde às seguintes questões:
 - Vagrant
 
 ### Configuração do ambiente
-Instale o Python3
-Instale o VirtualBox
-Instale o Vagrant
-Configure a VM, A configuração poderá ser baixada em
+- Instale o Python3
+- Instale o VirtualBox
+- Instale o Vagrant
+- Configure a VM, A configuração poderá ser baixada em
  ```
 	git clone https://github.com/udacity/fullstack-nanodegree-vm
  ```
-Clone este repositorio
+- Clone este repositorio
  ```
 	git clone https://github.com/mistermagson/logreport.git
  ```
-Baixe e descompacte os dados para popular o banco de dados [newsdata.zip](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) 
+- Baixe e descompacte os dados para popular o banco de dados [newsdata.zip](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) 
  
 ### Conectando à Maquina Virtual
 1. Execute Vagrant VM de dentro do sub-diretorio onde foi baixado o repositorio fullstack-nanodegree-vm usando o comando:
